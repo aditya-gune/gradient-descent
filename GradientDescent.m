@@ -14,11 +14,9 @@ learningRate = 0.01;
 reps= 10;
 
 %normalize
-if (normalization)
-    for i = 1:cols-1
-        x(:, i) = (x(:, i) - max(x(:, i))) / (max(x(:, i)) - min(x(:, i)));
-    end
-    y = (y - max(y)) / (max(y) - min(y));
+for i = 2:cols-1 %don't normalize dummy feature (std = 0)
+    x(:,i) = x(:,i) - mean(x(:,i));  %zero mean: feature - mean(feature)
+    x(:,i) = x(:,i) / std(x(:,i));  %unit variance: feature/std(feature) 
 end
 
 %call gradient to do gradient descent
