@@ -1,3 +1,6 @@
+%Most current gradient descent as of 10/5/16
+%source: http://www.codeproject.com/Articles/879043/Implementing-Gradient-Descent-to-Solve-a-Linear-Re
+
 filename = 'D:\Aditya\Desktop\test p1-16.csv';
 rawData = load(filename);
 rows = size(rawData,1);
