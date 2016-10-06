@@ -1,3 +1,4 @@
+%OLD Gradient descent
 %Sample code source:
 %http://www.dsplog.com/2011/10/29/batch-gradient-descent/
 
